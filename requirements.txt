@@ -1,0 +1,4 @@
+arxiv==1.4.2
+pandas==1.5.2
+streamlit==1.15.2
+plotly==5.11.0
