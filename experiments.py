@@ -69,7 +69,7 @@ def showcase_search_arxiv():
         st.code(textwrap.dedent("".join(sourcelines[1:])))
 
 
-@st.cache
+@st.cache_data
 def read_data(data_filepath) -> pd.DataFrame:
     df = pd.read_csv(data_filepath)
     return df.loc[:, df.columns != "Unnamed: 0"]
